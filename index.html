@@ -2,14 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEBRTC</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <video autoplay id="camera"></video>
-    <script src="socket.io/socket.io.js"></script>
+    <div id="tchat">
+        <video autoplay id="camera"></video>
+        <video autoplay id="remote"></video>
+    </div>
+
+    <script src="simple.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+    </script>
     <script src="script.js"></script>
 </body>
 
